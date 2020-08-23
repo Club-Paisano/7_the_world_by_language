@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href = "the_world_by_language.css">
+        <Title>
+            Search
+        </Title>
+    </head>
+    <body>
+        <header class= "langSelect">
+            
+                <button id="6" onClick="langDataFetch(this.id)">Anglophone</button>
+                <button id="20" onClick="langDataFetch(this.id)">Francophone</button>
+                <button id="11" onClick="langDataFetch(this.id)">Hispanophone</button>
+            
+        </header>
+        <main class="flags">
+    
+                <!-- <img class="flags" src="Assets/Images/Maps/Anglophone.png" alt="World map distinguished by Anglophone countries." title="Anglophone World Map" max-width="50%"> -->
+                <form class="white_text flags" id="search_box">
+                    <label for="flag_search">Country Search:</label>
+                    <input type="search" id="flag_search" class="flags" onkeyup="search()" placeholder="Country">
+                </form>
+                <section>
+                    <div class="flags" id="flag_list"></div>
+                </section>
+                
+            
+        </main>
+        <script src="the_world_by_language.js"></script>
+        <footer>
+            <p>1. Select language above</p>
+            <br>
+            <p>2. Search country</p>
+        </footer>
+    
+    </body>
+</html>

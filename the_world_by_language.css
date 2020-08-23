@@ -1,0 +1,143 @@
+/*Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap');
+
+/*Base Styling*/
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1597251416307-62211cd6a617?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
+    background-size: cover;
+    color:#072553;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    /*border: 2px solid black;*/
+    margin: 50px 9% 50px 9%; 
+}
+.white_text{
+    background-color:#2E60BD;
+    color: white;
+}
+.dark_text{
+    background-color:  #f8cf67;
+    color: #072553;
+}
+
+/***************Header**********************/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 0 0 2rem 0;
+    position:-webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top:0;
+
+    /* background: white; */
+}
+h1, nav, footer{
+    font-size: 1rem;
+    font-weight: 700;   
+    vertical-align: text-top;
+}
+
+a{
+    color: #072553;
+    text-decoration: none ;
+    margin: 0 0 0 2rem;
+    transition: color 0.3s; 
+}
+/* a.logo{
+    margin: 0 0 0 0;
+} */
+a:hover, a.current {
+    color: #f8cf67;
+}
+a:active{
+    color: #f8cf67;
+}
+ 
+
+/**********************Search_Page**********************/
+
+button {
+  background-color: #2E60BD; 
+  border: none;
+  color: white;
+  margin:2rem;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+main.flags{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px 32px;
+    grid-auto-flow: dense;
+}
+main.flags img{
+    grid-column: 2/ span 10;
+    align-content: center;
+    width: 200px;
+}
+main.flags section,main.flags form {
+    grid-column: 2/ span 10;
+    align-content: center;
+}
+#search_box{
+    padding: 25px 0 25px 0;
+    position:-webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top:100px;
+
+}
+/*************Hover data*************/
+
+
+/*************Footer*************/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a, footer p {
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+/*************Media Query*************/
+@media only screen and (max-width: 1028px){
+    
+    nav.start_container {
+        padding: 0 0 5vw 0;
+    }
+    .start_container button{
+        font-size: 1.5em;
+        margin: 10vh 0 0 0;
+    }
+}
+
+
+@media only screen and (max-width: 980px){
+    
+    
+    header{
+        flex-direction: column;
+    }
+    article.mapophone{
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+@media only screen and (max-width: 600px){
+    section
+}
